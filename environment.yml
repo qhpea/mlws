@@ -3,7 +3,6 @@ channels:
   - conda-forge
 dependencies:
   - python=3.10
-  - cudatoolkit
   - tensorflow
   - scikit-learn
   - matplotlib
@@ -29,6 +28,7 @@ dependencies:
   - peft
   - black
   - mlflow
+  - networkx
   - sentencepiece
   - langchain
   - gradio
@@ -38,5 +38,8 @@ dependencies:
   - evaluate
   - gluonts
   - ujson
-
+  - networkx
+  - keras
+  - imageio
+  - spacy
 # simulate
