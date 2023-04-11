@@ -47,7 +47,7 @@
           languages.rust.enable = true;
           
           # https://devenv.sh/reference/options/
-          packages = [ pkgs.cudatoolkit ];
+          packages = with pkgs; [ cudatoolkit stdenv.cc.cc.lib ];
 
           # enterShell = ''
           #   hello
