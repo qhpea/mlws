@@ -1,11 +1,9 @@
 name: mlws
 channels:
-  - pytorch
-  - nvidia
-  - pytorch3d
   - conda-forge
 dependencies:
-  - python=3.9
+  - python=3.10
+  - tensorflow
   - scikit-learn
   - matplotlib
   - pytorch
@@ -14,6 +12,7 @@ dependencies:
   - pillow
   - sympy
   - pyspark
+  - keras
   - nltk
   - opencv=4
   - ipykernel=6
@@ -23,6 +22,7 @@ dependencies:
   - accelerate
   - av
   - ipywidgets
+  - matplotlib
   - pytorch-lightning
   - diffusers
   - peft
@@ -30,6 +30,7 @@ dependencies:
   - mlflow
   - networkx
   - sentencepiece
+  - langchain
   - gradio
   - timm
   - onnxruntime
@@ -41,11 +42,4 @@ dependencies:
   - keras
   - imageio
   - spacy
-  - pytorch3d
-  - detectron2
-  - pip
-  - pip:
-    - vizdoom[gym]
-    - envpool
-    - langchain
-    - git+https://github.com/facebookresearch/detectron2@main#subdirectory=projects/DensePose
+# simulate
