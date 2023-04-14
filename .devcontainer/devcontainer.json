@@ -19,7 +19,44 @@
 				"bungcip.better-toml"
 			]
 		}
-	}
+	},
+	"containerEnv": {
+		"NVIDIA_DRIVER_CAPABILITIES": "all",
+		"DISPLAY": "${localEnv:DISPLAY}",
+		"XAUTHORITY": "/var/run/.Xauthority"
+	},
+	"mounts": [
+		{
+            "type": "volume",
+            "source": "vscode-home",
+            "target": "/home/vscode/"
+        },
+		{
+			"type": "bind",
+			"source": "/home/lizelive/.cache/",
+			"target": "/home/vscode/.cache/"
+		},
+		{
+			"type": "bind",
+			"source": "/var/cache/",
+			"target": "/var/cache/"
+		},
+		{
+			"type": "bind",
+			"source": "/tmp/",
+			"target": "/tmp/"
+		},
+		{
+            "source": "${localEnv:XAUTHORITY}",
+            "target": "/var/run/.Xauthority",
+            "type": "bind"
+        },
+        {
+            "type": "bind",
+            "source": "/tmp/.X11-unix",
+            "target": "/tmp/.X11-unix"
+        }
+	]
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 
