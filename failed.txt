@@ -1,4 +1,11 @@
 paddlepaddle
 rasa
 catboost
-llvmlite
+mlflow
+flair
+
+pymc3
+jina
+cupy
+
+pymilvus
