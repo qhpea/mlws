@@ -1,16 +1,18 @@
-# mlws
-machine learning setup
+[tool.poetry]
+name = "mlws"
+version = "0.1.0"
+description = ""
+authors = ["lizelive <git@lize.live>"]
+license = "AGPL"
+readme = "README.md"
 
-
-https://github.com/ml-tooling/best-of-ml-python
-
+[tool.poetry.dependencies]
+python = "^3.10"
 black = "*"
 ipykernel = "*"
 accelerate = "*"
-albumentations = "*"
 datasets = "*"
 diffusers = "*"
-dvc = "*"
 evaluate = "*"
 fastai = "*"
 gradio = "*"
@@ -32,3 +34,8 @@ torchaudio = "*"
 torchmetrics = "*"
 torchvision = "*"
 transformers = "*"
+controlnet_aux = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
